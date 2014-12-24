@@ -29,7 +29,7 @@ function UISizerDemoWindow ()
 	    left: margin,
 	    right: margin,
 	    bottom: margin
-	})
+	});
 	
 	var l, iv;
 	

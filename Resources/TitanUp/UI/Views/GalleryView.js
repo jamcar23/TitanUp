@@ -88,7 +88,7 @@ var GalleryViewPopup = function (images, startIndex, adViewClass) {
 		right: m,
 		bottom : (_adView == null) ? m : (m + _adView.getHeight ()),
 		height: parseInt (fs * 3.5),
-	})
+	});
 	
 	_captionOverlay = Ti.UI.createView ({
 		left: 0,
@@ -96,7 +96,7 @@ var GalleryViewPopup = function (images, startIndex, adViewClass) {
 		height: Ti.UI.FILL,
 		backgroundColor: '#000',
 		opacity: 0.5
-	})
+	});
 	
 	_captionLabel = Ti.UI.createLabel({
 		text : caption,
@@ -165,9 +165,9 @@ var GalleryViewPopup = function (images, startIndex, adViewClass) {
 		return {
 			width : newWidth,
 			height : newHeight
-		}
+		};
 
-	}
+	};
 
 
 
@@ -179,7 +179,7 @@ var GalleryViewPopup = function (images, startIndex, adViewClass) {
 
 		_scrollableGalleryView.views[index].height = newSize.height;
 		_scrollableGalleryView.views[index].width = newSize.width;
-	}
+	};
 
 
 	/**
@@ -229,7 +229,7 @@ var GalleryViewPopup = function (images, startIndex, adViewClass) {
 			_captionOverlay.animate (animation2);
 		}
 		_isUiHidden = !_isUiHidden;
-	}
+	};
 	
 	
 	var imageViews = [];
@@ -434,7 +434,7 @@ function GalleryView (params)
 			currCol++;
 			xPos += _thumbSize + _borderPadding;
 		}
-	}
+	};
 
 
 	var computeSizes = function() 
@@ -453,7 +453,7 @@ function GalleryView (params)
 
 		_borderPadding = (_params.borderPadding);
 		_thumbSize = (TU.Device.getDisplayWidth() - ((_numCols + 1) * _borderPadding)) / _numCols;
-	}
+	};
 
 	var createThumbGallery = function() 
 	{
@@ -557,7 +557,7 @@ function GalleryView (params)
 		{
 			_self.add (_adView);
 		}
-	}
+	};
 
 	createThumbGallery();
 	
@@ -573,6 +573,6 @@ function GalleryView (params)
 GalleryView.TUInit = function (tu)
 {
 	TU = tu;
-}
+};
 
 module.exports = GalleryView;

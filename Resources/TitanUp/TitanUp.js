@@ -32,7 +32,7 @@ function TitanUp ()
 TitanUp.getVersion = function ()
 {
     return _version;
-}
+};
 
 Ti.API.debug ('[TitanUp] initializing...');
 

@@ -120,7 +120,7 @@ Sizer.getDimensionExact = function (l, m, h, xh)
 	}
 	
 	return dimension;
-}
+};
 
 function initialize ()
 {
@@ -139,7 +139,7 @@ Sizer.TUInit = function (tu)
 {
 	TU = tu;
 	initialize ();
-}
+};
 
 
 

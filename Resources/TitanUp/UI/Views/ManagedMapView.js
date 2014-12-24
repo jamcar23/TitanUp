@@ -83,7 +83,7 @@ function ManagedMapView ()
 				removed_callback ();
 			}
 		});
-	}
+	};
 	
 	/**
 	 * Adds the ManagedMapView to a view, making sure to remove it from the previous view, if there
@@ -111,7 +111,7 @@ function ManagedMapView ()
 		view.add (_instance);
 		_current_parent = view;
 		_click_callback = click_callback;
-	}
+	};
 	
 	_instance.removeFromView = function (view)
 	{
@@ -126,7 +126,7 @@ function ManagedMapView ()
 		_current_parent = null;
 		_click_callback = null;
 		view.remove (_instance);
-	}
+	};
 	
 	return _instance;	
 }

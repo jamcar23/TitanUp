@@ -115,7 +115,7 @@ function PickerPopup (title, values)
 	    }
 
 		_value = value;
-	}
+	};
 	
 	return _self;
 }
@@ -174,7 +174,7 @@ function SimplePicker (params)
 		_self = Ti.UI.createPicker (newparams);
 		_self.addEventListener ('change', function (e) {
 			_value = e.selectedValue[0];
-			_self.fireEvent ('TUchange', { value: _value })
+			_self.fireEvent ('TUchange', { value: _value });
 		});
 		_self.add (_data);
 	}

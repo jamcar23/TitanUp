@@ -144,7 +144,7 @@ Device.getNativeUnit = function ()
     }
     
     return 'px';
-}
+};
 
 /**
  * Gets the logical density factor (ratio of pixels to dips)
@@ -174,7 +174,7 @@ Device.getLogicalDensityFactor = function ()
     }
     
     return 1;
-}
+};
 
 
 /**
@@ -247,7 +247,7 @@ Device.setWorkingDimensions = function (workingWidth, workingHeight)
 {
 	_workingWidth = workingWidth;
 	_workingHeight = workingHeight;
-}
+};
 
 
 initialize ();

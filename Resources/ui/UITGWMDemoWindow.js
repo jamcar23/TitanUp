@@ -118,14 +118,14 @@ function UITGWMDemoWindow ()
 		var t = TU.UI.TGWM.getActiveTab ();
 		//Ti.API.info ("tab active: " + t.title);
 		alert ("tab active: " + t.title);
-	}
+	};
 	
 	var onTabInactive = function (e)
 	{
 		var t = TU.UI.TGWM.getActiveTab ();
 		//Ti.API.info ("tab inactive; active tab: " + t.title);
 		alert ("tab inactive; active tab: " + t.title);
-	}
+	};
 	
 	_self.addEventListener ('tabactive', onTabActive);
 	_self.addEventListener ('tabinactive', onTabInactive);

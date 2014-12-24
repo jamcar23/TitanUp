@@ -25,23 +25,23 @@ UI.EventThrottle = function ()
 		
 		_ignore_event = true;
 		return true;
-	}
+	};
 			
 	this.setWindow = function (win)
 	{
 		win.addEventListener ('close', function (e) {
 			_ignore_event = false;
 		});
-	}
+	};
 	
 	this.setTimeout = function (ms)
 	{
 		setTimeout (function () {
 			_ignore_event = false;
 		}, ms);
-	}
+	};
 	
-}
+};
 
 
 UI.createSimplePicker = function (params)
@@ -50,13 +50,13 @@ UI.createSimplePicker = function (params)
 	SimplePicker.TUInit (TU);
 	
 	return new SimplePicker (params);
-}
+};
 
 UI.createManagedMapView = function ()
 {
 	var ManagedMapView = require ('/TitanUp/UI/Views/ManagedMapView');
 	return new ManagedMapView ();
-}
+};
 
 UI.createSelectBar = function (params)
 {
@@ -64,7 +64,7 @@ UI.createSelectBar = function (params)
 	SelectBar.TUInit (TU);
 	
 	return new SelectBar (params);
-}
+};
 
 UI.createGalleryView = function (params)
 {
@@ -72,7 +72,7 @@ UI.createGalleryView = function (params)
 	GalleryView.TUInit (TU);
 	
 	return new GalleryView (params);
-}
+};
 
 
 UI.Theme = require ('/TitanUp/UI/Theme');
@@ -85,7 +85,7 @@ UI.TUInit = function (tu)
 	UI.Theme.TUInit (tu);
 	UI.Sizer.TUInit (tu);
 	UI.TGWM.TUInit (tu);
-}
+};
 
 
 module.exports = UI;

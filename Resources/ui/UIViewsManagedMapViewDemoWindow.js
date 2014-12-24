@@ -140,7 +140,7 @@ function UIViewsManagedMapViewDemoWindow (mapindex)
 		mapview.removeAllAnnotations ();
 		mapview.addAnnotations (annotations);
 		mapview.show ();
-	}
+	};
 	
 	var clickCallback = function (e)
 	{
@@ -154,7 +154,7 @@ function UIViewsManagedMapViewDemoWindow (mapindex)
 			mapview.addToView (contentview2, clickCallback);
 			addedCallback ();
 		});
-	}
+	};
 		
 	mapview.manage (contentview2, _self, clickCallback, addedCallback);
 	

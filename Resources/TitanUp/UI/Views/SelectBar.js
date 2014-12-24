@@ -151,7 +151,7 @@ function SelectBar (params)
 	
 		else
 		{
-			params.layout = 'horizontal'
+			params.layout = 'horizontal';
 			var btnw = parseInt (100 / _labels.length); 
 			btnw = '' + btnw + '%';
 			
@@ -170,7 +170,7 @@ function SelectBar (params)
 				_self.add (button);
 			}
 		}
-	}
+	};
 	
 	_init (params);
 	if (_self == null)
@@ -227,7 +227,7 @@ function SelectBar (params)
 		{
 			_buttons[j].enabled = enabled;
 		}
-	}
+	};
 	
 	return _self;
 }

@@ -107,20 +107,20 @@ TGWM.closeOnTabInactive = function (win)
 	{
 		mytabwin.removeEventListener ('tabinactive', onTabInactive);
 		TGWM.closeWindow (win);
-	}
+	};
 	
 	if (mytabwin)
 	{
 		mytabwin.addEventListener ('tabinactive', onTabInactive);
 	}
-}
+};
 
 
 
 TGWM.getActiveTab = function ()
 {
 	return _tabgroup.getActiveTab();	
-}
+};
 
 
 TGWM.TUInit = function (tu)
